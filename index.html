@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <title>Focus Timer</title>
+</head>
+<body>
+  <div class="background-container">
+    <div class="background-image">
+      <div class="overlay">
+        <div class="page">
+          <header>
+            
+              <img src="/Images/FT-Logo.svg" alt="Logo">
+              <!-- Toggle Switch -->
+              <div class="tab">
+                <button class="tablinks">Timer</button>
+                <button class="tablinks">Stop Watch</button>
+              </div>
+      
+            <!-- Shuffle Image Button -->
+            <button class="btn"><i class="fa fa-folder">Shuffle Image</i></button>
+      
+          </header>
+        
+          <!-- Timer Section -->
+      
+          <div class="container">
+            <h4 class="field-title">Pomodoro Timer</h4>
+            <div id="timer">25:00</div>
+            <button class= "brk-btn" id="switchBtn">Switch to 10 min</button>
+
+            <!-- <h4 class="field-title">Timer Controls</h4> -->
+            
+      <div>
+        <div id="controls">
+          <button class= "btn" id="toggleBtn"><i class="fa fa-play"></i></button>
+          <button class= "btn" id="resetBtn"><i class="fa fa-rotate-left"></i></button>
+        </div>
+
+        
+        <audio id="alertSound" src="/SOunds/alarm.mp3" preload="auto"></audio>
+  </div>
+ 
+  <div>
+     <section class="quote-container">
+      <hr class="divider">
+    <h4 class="field-title">Quote for the day</h4>
+    <p class="quote" id="quote">
+      Enthusiastically matrix standards compliant infrastructures after high-quality users. Credibly morph standards compliant materials vis-a-vis viral deliverables.
+    </p>
+  </section>
+  </div>
+ 
+  <script src="index.js"></script>
+</body>
+</html>
