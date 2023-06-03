@@ -17,25 +17,25 @@
       <div class="overlay">
         <div class="page">
           <header>
-            
-              <img src="/Images/FT-Logo.svg" alt="Logo">
+            <a href="/"><img src="/Images/FT-Logo.svg" alt="Logo"></a>
               <!-- Toggle Switch -->
               <div class="tab">
-                <button class="tablinks">Timer</button>
-                <button class="tablinks">Stop Watch</button>
-              </div>
-      
-            <!-- Shuffle Image Button -->
-            <button class="btn"><i class="fa fa-folder">Shuffle Image</i></button>
-      
-          </header>
+                <nav class="menu-list">
+                  <ul>
+                    <li><a class="menu-item current" href="/index.html">Timer</a></li>
+                    <li><a class="menu-item" href="/stopwatch.html">Stopwatch</a></li>
+                    <li><a class="menu-item" href="/documentation.html">Documentation</a></li>
+                  </ul>
+                </nav>
+            </div>
+      </header>
         
           <!-- Timer Section -->
       
           <div class="container">
             <h4 class="field-title">Pomodoro Timer</h4>
-            <div id="timer">25:00</div>
-            <button class= "brk-btn" id="switchBtn">Switch to 10 min</button>
+            <div class="timedigit" id="timer">25:00</div>
+            <button class= "brk-btn" id="switchBtn">10 Min Break</button>
 
             <!-- <h4 class="field-title">Timer Controls</h4> -->
             
