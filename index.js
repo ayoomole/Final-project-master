@@ -11,7 +11,7 @@ function getRandomImage() {
       );
       const backgroundImage = document.querySelector(".background-image");
 
-      // // Fading out the current image (just trying it to see if it works)
+      // // Fadeing out animation the current image (just trying it to see if it works)
       // backgroundImage.style.opacity = 0;
 
       setTimeout(() => {
