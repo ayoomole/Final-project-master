@@ -75,10 +75,10 @@ function resetTimer() {
   isTimerRunning = false;
   if (isBreakTimer) {
     minutes = 10;
-    document.getElementById("switchBtn").textContent = "Switch to 25 min";
+    document.getElementById("switchBtn").textContent = "Get Back To Work";
   } else {
     minutes = 25;
-    document.getElementById("switchBtn").textContent = "Switch to 10 min";
+    document.getElementById("switchBtn").textContent = "Take A Break";
   }
   seconds = 0;
   document.getElementById("toggleBtn").innerHTML = '<i class="fa fa-play"></i>';
@@ -89,10 +89,10 @@ function resetTimer() {
 function switchTimer() {
   if (isBreakTimer) {
     minutes = 25;
-    document.getElementById("switchBtn").textContent = "Switch to 10 min";
+    document.getElementById("switchBtn").textContent = "Take A Break";
   } else {
     minutes = 10;
-    document.getElementById("switchBtn").textContent = "Switch to 25 min";
+    document.getElementById("switchBtn").textContent = "Get Back To Work";
   }
   seconds = 0;
   isBreakTimer = !isBreakTimer;
