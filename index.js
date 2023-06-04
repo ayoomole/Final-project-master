@@ -1,6 +1,5 @@
 // Function to fetch a random image URL from the Unsplash API
 function getRandomImage() {
-  // Replace 'YOUR_UNSPLASH_ACCESS_KEY' with your actual Unsplash API access key
   const accessKey = "5VD8KmEYmt68-vtAQgmNt2_OpF1rteFSCbW2qAu04xk";
   const apiUrl = `https://api.unsplash.com/photos/random?client_id=${accessKey}`;
   fetch(apiUrl)
@@ -12,8 +11,8 @@ function getRandomImage() {
       );
       const backgroundImage = document.querySelector(".background-image");
 
-      // Fade out the current image
-      backgroundImage.style.opacity = 0;
+      // // Fade out the current image
+      // backgroundImage.style.opacity = 0;
 
       // Set the new image after a brief delay
       setTimeout(() => {

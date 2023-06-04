@@ -1,3 +1,5 @@
+/* Page Structure */
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -25,7 +27,6 @@ nav li a {
 }
 
 .nav-active {
-  /* Add your desired styles for the active menu item */
   font-weight: bold;
   color: #40cd75;
   text-decoration: underline;
@@ -102,6 +103,8 @@ nav li a {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Adding some more stucture to page */
+
 .page {
   height: 100vh;
   text-align: center;
@@ -121,6 +124,9 @@ header {
 
 h1 {
   margin: 0;
+}
+h2 {
+  color: #40cd75;
 }
 
 /* Buttons */
@@ -157,12 +163,11 @@ h1 {
   margin: 3px;
 }
 
-/* Darker background on mouse-over */
 .btn:hover {
   background-color: rgba(0, 0, 0, 0.911);
 }
 
-/* Timer Box */
+/* Timer Box & Stopwatch  */
 .container {
   padding: 50px 0px;
   margin-right: 30%;
@@ -197,14 +202,14 @@ h1 {
 .breaks-tab {
   margin-bottom: 40px;
 }
-
+/* More Buttons CSS */
 .start-btn {
-  border: none; /* Remove borders */
+  border: none;
   border-radius: 100%;
-  color: white; /* White text */
-  padding: 20px 30px; /* Some padding */
-  font-size: 40px; /* Set a font size */
-  cursor: pointer; /* Mouse pointer on hover */
+  color: white;
+  padding: 20px 30px;
+  font-size: 40px;
+  cursor: pointer;
   background: #40cd75;
   border-radius: 1000px;
   margin-top: 50px;
@@ -216,12 +221,12 @@ h1 {
 
 #start {
   padding: 30px;
-  background-color: #40cd75; /* Blue background */
-  border: none; /* Remove borders */
+  background-color: #40cd75;
+  border: none;
   border-radius: 1000%;
-  color: white; /* White text */
-  font-size: 24px; /* Set a font size */
-  cursor: pointer; /* Mouse pointer on hover */
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 #stop,
@@ -236,6 +241,8 @@ h1 {
   font-size: 16px; /* Set a font size */
   cursor: pointer; /* Mouse pointer on hover */
 }
+
+/* Random Quote Styling */
 
 #quote {
   padding: 0px 50px;
@@ -255,6 +262,8 @@ h1 {
   height: 1px;
 }
 
+/* Stopwatch Field for Minutes */
+
 input#minutesInput {
   padding: 26px;
   background-color: rgba(0, 0, 0, 0.337);
@@ -272,6 +281,8 @@ input#minutesInput {
   color: white;
 }
 
+/* New Stopwatch Background  */
+
 .bg {
   position: fixed;
   top: 0;
@@ -286,14 +297,11 @@ input#minutesInput {
   background-color: black;
 }
 
-h2 {
-  color: #40cd75;
-}
-
-.doc {
+.stp-bg {
   background-color: rgb(34, 34, 34);
 }
 
-.stp-bg {
+/* Documentation */
+.doc {
   background-color: rgb(34, 34, 34);
 }
