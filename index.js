@@ -11,15 +11,15 @@ function getRandomImage() {
       );
       const backgroundImage = document.querySelector(".background-image");
 
-      // // Fade out the current image
+      // // Fadeing out animation the current image (just trying it to see if it works)
       // backgroundImage.style.opacity = 0;
 
-      // Set the new image after a brief delay
       setTimeout(() => {
         backgroundContainer.style.backgroundImage = `url(${imageUrl})`;
         backgroundImage.style.opacity = 1;
       }, 500);
     })
+
     .catch((error) => {
       console.error("Error fetching random image:", error);
     });
@@ -45,6 +45,7 @@ let seconds = 0;
 let isTimerRunning = false;
 let isBreakTimer = false;
 
+// Play and pause button
 function toggleTimer() {
   if (isTimerRunning) {
     pauseTimer();
@@ -53,6 +54,7 @@ function toggleTimer() {
   }
 }
 
+// Starting the timer
 function startTimer() {
   timer = setInterval(updateTimer, 1000);
   isTimerRunning = true;
@@ -60,12 +62,14 @@ function startTimer() {
     '<i class="fa fa-pause"></i>';
 }
 
+// Pausing the timer
 function pauseTimer() {
   clearInterval(timer);
   isTimerRunning = false;
   document.getElementById("toggleBtn").innerHTML = '<i class="fa fa-play"></i>';
 }
 
+// Resettimg the timer for both 10 & 15mins
 function resetTimer() {
   clearInterval(timer);
   isTimerRunning = false;
@@ -81,6 +85,7 @@ function resetTimer() {
   updateTimer();
 }
 
+// Switing the timer
 function switchTimer() {
   if (isBreakTimer) {
     minutes = 25;
@@ -95,6 +100,7 @@ function switchTimer() {
   updateTimer();
 }
 
+//Starrting over
 function updateTimer() {
   if (seconds === 0) {
     if (minutes === 0) {
@@ -118,12 +124,12 @@ function updateTimer() {
   timerElement.textContent = `${formattedMinutes}:${formattedSeconds}`;
 }
 
+// Play alsrm sound when timer is up
 function playAlertSound() {
   const alertSound = document.getElementById("alertSound");
   alertSound.play();
 }
 
-// Attach event listeners to buttons
 const toggleBtn = document.getElementById("toggleBtn");
 const resetBtn = document.getElementById("resetBtn");
 const switchBtn = document.getElementById("switchBtn");
@@ -132,7 +138,7 @@ toggleBtn.addEventListener("click", toggleTimer);
 resetBtn.addEventListener("click", resetTimer);
 switchBtn.addEventListener("click", switchTimer);
 
-// Quote function
+// Random Quote function
 function getRandomQuote() {
   fetch("https://type.fit/api/quotes")
     .then((response) => response.json())
@@ -141,7 +147,7 @@ function getRandomQuote() {
       const quote = data[randomIndex].text;
       const author = data[randomIndex].author || "Unknown";
 
-      // Update the HTML element with the quote
+      // Updating the HTML element with the quote
       const quoteElement = document.getElementById("quote");
       quoteElement.textContent = `"${quote}" - ${author}`;
     })
@@ -150,8 +156,8 @@ function getRandomQuote() {
     });
 }
 
-// Call the function to fetch a random quote on page load
+// Calling the function to fetch a random quote
 getRandomQuote();
 
-// Call the function to set the initial random image and quote on page load
+// Calling the function to fetch random image
 getRandomImage();
