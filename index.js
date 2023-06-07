@@ -40,8 +40,8 @@ function getRandomQuote() {
 
 // Timer functionality
 let timer;
-let minutes = 25;
-let seconds = 0;
+let minutes = ;
+let seconds = 30;
 let isTimerRunning = false;
 let isBreakTimer = false;
 
